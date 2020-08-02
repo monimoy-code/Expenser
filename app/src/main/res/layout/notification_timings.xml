@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".SetNotification"
+    tools:layout_editor_absoluteY="56dp"
+    tools:showIn="@layout/activity_set_notification">
+
+    <TextView
+        android:id="@+id/txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="Set Notification timings"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txt">
+
+        <RadioButton
+            android:id="@+id/btnNone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="ButtonClicked"
+            android:text="No Reminder"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="ButtonClicked"
+            android:text="1hour"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="ButtonClicked"
+            android:text="2hour"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:text="3hour"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="ButtonClicked"
+            android:text="4hour"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="ButtonClicked"
+            android:text="5hour"
+            android:textSize="20sp" />
+
+        <RadioButton
+            android:id="@+id/btn6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:onClick="ButtonClicked"
+            android:text="6hour"
+            android:textSize="20sp" />
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
